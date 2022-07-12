@@ -6,11 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  
- 
-  
-  constructor(){
-    
+
+  outraPalavra = 'Pudim';
+  titulo = 'Minha gata mudou o título';
+
+  constructor() {
+
   }
-  
+
 }
