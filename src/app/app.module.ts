@@ -7,6 +7,7 @@ import { DatabiExercicioComponent } from './databi-exercicio/databi-exercicio.co
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { ContadorComponent } from './contador/contador.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { HomeComponent } from './home/home.component';
     HeaderComponent,
     HomeComponent,
     FooterComponent,   
-    DatabiExercicioComponent
+    DatabiExercicioComponent, ContadorComponent
   ],
   imports: [
     BrowserModule,

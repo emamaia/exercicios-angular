@@ -2,6 +2,14 @@
 
 <app-home></app-home>
 
-<app-databi-exercicio [palavra] = 'outraPalavra'></app-databi-exercicio>
+<app-databi-exercicio [palavra] = 'outraPalavra'
+(clicado)="eventoRecebido($event)"
+></app-databi-exercicio>
+
+<app-contador
+    [contadorInicialFilho]= 'contadorInicial'
+    (addContador)="addValor($event)"
+    (removeContador)="diminuiValor($event)"
+></app-contador>
 
 <app-footer></app-footer>

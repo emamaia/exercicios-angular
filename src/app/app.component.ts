@@ -9,9 +9,22 @@ export class AppComponent {
 
   outraPalavra = 'Pudim';
   titulo = 'Minha gata mudou o título';
+  contadorInicial = 10;
 
-  constructor() {
+  constructor() {  }
 
-  }
+eventoRecebido($event){
+  console.log('EVENTO RECEBIDO');
+}
+
+addValor($event){
+  console.log('Add valor aqui');
+  this.contadorInicial = this.contadorInicial + 10;
+}
+
+diminuiValor($event){
+  console.log('Diminui valor aqui');
+  this.contadorInicial = this.contadorInicial - 10;
+}
 
 }
