@@ -7,23 +7,24 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class ContadorComponent implements OnInit {
 
- @Input() contadorInicialFilho: any;
- @Output() addContador = new EventEmitter();
- @Output() removeContador = new EventEmitter();
+@Input() valor = 0;
+@Output() valorMudou = new EventEmitter();
 
  constructor() { }
 
   ngOnInit(): void {
   }
 
-  adicionaUm($event){
-    console.log('add um');
-    this.addContador.emit($event);
+  incrementar($event){
+    this.valor = this.valor + 1;
+    this.valorMudou.emit(this.valor);
+    console.log('Aumenta um');
   }
 
-  subtraiUm($event){
-    console.log('diminui um');
-    this.removeContador.emit($event);
+  decrementar($event){
+    this.valor = this.valor - 1;
+    this.valorMudou.emit(this.valor);
+    console.log('Diminui um');
   }
 
 }

@@ -1,8 +1,9 @@
-<h1>
+<!-- <h1>
     {{palavra}}
 </h1>
 
 <button (click)="onClick()">Clique em mim!</button>
+
 
 <input type="text" [value]="valorInput" (keyup)="digitouAlgo($event)">
 
@@ -12,5 +13,9 @@
 
 <button (click)="OnClickEmissor($event)" >
     Emitir infos de clique
-</button>
+</button> -->
 
+<app-contador
+    [valor] = 10
+    (valorMudou)="onValorAtualizadoContador($event)"
+></app-contador>
