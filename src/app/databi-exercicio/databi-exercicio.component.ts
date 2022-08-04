@@ -15,6 +15,7 @@ export class DatabiExercicioComponent implements OnInit {
   valorInput = '';
   valorInputEmissor = '';
 
+  valorContador = 10;
 
   constructor() { }
 
@@ -25,10 +26,6 @@ export class DatabiExercicioComponent implements OnInit {
     console.log('clicou');
   }
 
-  // ======= EXEMPLOS DE CONTADOR
-  onValorAtualizadoContador($event){
-    console.log('Valor enviado ao pai')
-  }
 
   // ======= EXEMPLOS DE DATA BINDING
   // digitouAlgo($event){

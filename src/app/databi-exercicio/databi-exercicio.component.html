@@ -15,7 +15,10 @@
     Emitir infos de clique
 </button> -->
 
-<app-contador
-    [valor] = 10
-    (valorMudou)="onValorAtualizadoContador($event)"
+Valor atual do valorContador: {{valorContador}}
+
+<app-contador 
+
+[(valor)]= 'valorContador'
+
 ></app-contador>
